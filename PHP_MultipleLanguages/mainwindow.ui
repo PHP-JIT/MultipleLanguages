@@ -20,7 +20,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>23</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -37,11 +37,13 @@
      <string>Edit</string>
     </property>
     <addaction name="actionCancel_U"/>
+    <addaction name="actionRedo"/>
     <addaction name="separator"/>
     <addaction name="actionCut"/>
     <addaction name="actionCopy_C"/>
     <addaction name="actionPaste_P"/>
     <addaction name="actionDelete_L"/>
+    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -118,7 +120,7 @@
   </action>
   <action name="actionCancel_U">
    <property name="text">
-    <string>Cancel</string>
+    <string>Undo</string>
    </property>
   </action>
   <action name="actionCut">
@@ -189,6 +191,11 @@
   <action name="actionFrench">
    <property name="text">
     <string>French</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>Redo</string>
    </property>
   </action>
  </widget>
