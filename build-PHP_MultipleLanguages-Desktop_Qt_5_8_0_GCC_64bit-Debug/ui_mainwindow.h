@@ -47,6 +47,7 @@ public:
     QAction *actionJapanese;
     QAction *actionFrench;
     QAction *actionRedo;
+    QAction *actionRecent;
     QWidget *centralWidget;
     QMenuBar *menuBar;
     QMenu *menu;
@@ -105,12 +106,14 @@ public:
         actionFrench->setObjectName(QStringLiteral("actionFrench"));
         actionRedo = new QAction(MainWindow);
         actionRedo->setObjectName(QStringLiteral("actionRedo"));
+        actionRecent = new QAction(MainWindow);
+        actionRecent->setObjectName(QStringLiteral("actionRecent"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 20));
+        menuBar->setGeometry(QRect(0, 0, 400, 22));
         menu = new QMenu(menuBar);
         menu->setObjectName(QStringLiteral("menu"));
         menu_2 = new QMenu(menuBar);
@@ -140,6 +143,7 @@ public:
         menu->addAction(actionOpen_O);
         menu->addAction(actionSave_S);
         menu->addAction(actionSave_As_A);
+        menu->addAction(actionRecent);
         menu_2->addAction(actionCancel_U);
         menu_2->addAction(actionRedo);
         menu_2->addSeparator();
@@ -191,6 +195,7 @@ public:
         actionJapanese->setText(QApplication::translate("MainWindow", "Japanese", Q_NULLPTR));
         actionFrench->setText(QApplication::translate("MainWindow", "French", Q_NULLPTR));
         actionRedo->setText(QApplication::translate("MainWindow", "Redo", Q_NULLPTR));
+        actionRecent->setText(QApplication::translate("MainWindow", "Recent", Q_NULLPTR));
         menu->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
         menu_2->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
         menu_3->setTitle(QApplication::translate("MainWindow", "Format", Q_NULLPTR));

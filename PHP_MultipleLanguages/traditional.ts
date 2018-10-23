@@ -150,7 +150,7 @@
     <message>
         <location filename="mainwindow.ui" line="204"/>
         <source>Recent</source>
-        <translation type="unfinished"></translation>
+        <translation>最近</translation>
     </message>
 </context>
 </TS>
