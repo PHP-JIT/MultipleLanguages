@@ -70,7 +70,7 @@
     <message>
         <location filename="mainwindow.ui" line="123"/>
         <source>Undo</source>
-        <translation type="unfinished"></translation>
+        <translation>Undo</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="128"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="mainwindow.ui" line="198"/>
         <source>Redo</source>
-        <translation type="unfinished"></translation>
+        <translation>Redo</translation>
     </message>
 </context>
 </TS>

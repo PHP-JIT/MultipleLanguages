@@ -20,7 +20,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>20</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -31,6 +31,7 @@
     <addaction name="actionOpen_O"/>
     <addaction name="actionSave_S"/>
     <addaction name="actionSave_As_A"/>
+    <addaction name="actionRecent"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -196,6 +197,11 @@
   <action name="actionRedo">
    <property name="text">
     <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionRecent">
+   <property name="text">
+    <string>Recent</string>
    </property>
   </action>
  </widget>
